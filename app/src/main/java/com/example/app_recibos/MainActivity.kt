@@ -1,5 +1,7 @@
 package com.example.app_recibos
 
+
+import IniciarSesion
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -70,7 +72,7 @@ fun AppNavegacion(modifier: Modifier = Modifier) {
             )
         }
         composable(route = Pantallas.IniciarSesion.name) {
-            // Pantalla de login (por implementar)
+            IniciarSesion(modifier = modifier)
         }
         composable(route = Pantallas.CrearCuenta.name) {
             // Pantalla de registro (por implementar)
